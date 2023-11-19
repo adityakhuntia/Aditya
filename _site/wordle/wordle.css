@@ -1,0 +1,50 @@
+/* Style for Wordle form */
+#wordleForm {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style for Wordle row */
+.wordle-row {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Style for each input block */
+.block {
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Adjust input appearance */
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+/* Style for the Check button */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
