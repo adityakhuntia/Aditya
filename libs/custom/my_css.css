@@ -70,12 +70,19 @@ h4 {
 /*  ================ Project styling  ================ */
 .project-container {
   margin-bottom: 30px;
+  margin-left: 50px;
 }
 .project-image-container {
   border: 1px solid rgba(0,0,0,0.2);
   padding: 3px;
   transition: 0.3s;
+
+  height: 200px;
+  width: 350px;
+  overflow: hidden;
 }
+
+
 .project-image-container:hover {
   transition: 0.3s;
 }
@@ -84,6 +91,7 @@ h4 {
 }
 .project-caption {
   padding: 3px;
+
 }
 
 /* Larger than phone */
@@ -261,7 +269,6 @@ figure.side-by-side figcaption {
 .right {
     display: table;
     /* position: relative; */
-    float: right;
     /* width: 300px;
     height: 300px;
     margin: 25px 12px;
