@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wordle Answer</title>
+  </head>
+  <body>
+    <script>
+      const url =
+        "https://www.thegamer.com/wordle-nyt-answer-hints-december-17-2023/#today-39-s-wordle-answer-911"; // Replace with the URL you want to check
+
+      fetch(url, {
+        method: "GET",
+        mode: "no-cors",
+      })
+        .then((response) => {
+          console.log("Response Code:", response.status);
+        })
+        .catch((error) => {
+          console.error("Error fetching the URL:", error);
+        });
+    </script>
+  </body>
+</html>
