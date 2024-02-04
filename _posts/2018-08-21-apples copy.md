@@ -1,6 +1,9 @@
 ---
 layout: post
-author: jill
+author: Aditya Khuntia
+title: Community Detection in Financial Firms using Graph Theory
+tags: maths, physics
+img: https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 An apple is a sweet, edible fruit produced by an apple tree.

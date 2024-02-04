@@ -3,13 +3,65 @@ layout: default
 title: Blog
 ---
 
-<h1>Latest Posts</h1>
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 45%; /* Adjust width as needed */
+    margin: 10px; /* Adjust margin as needed */
+    display: inline-block;
+    height: 350px;
+    vertical-align: top;
+  }
+
+  .card img {
+    height: 175px;
+    width: 100%;
+    overflow-x: fill;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card content */
+  .card-content {
+    padding: 20px;
+  }
+
+  /* Card title */
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  /* Card excerpt */
+  .card-excerpt {
+    padding: 20px;
+    font-size: 15px;
+    color: #666;
+  }
+</style>
+
+<h1 style="font-family: vouge">Latest Posts</h1>
 
 <ul>
   {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
+
+  <li class="card">
+    <img src="{{post.img}}" />
+    <div class="card-content">
+      <a class="card-title" href="{{ post.url }}">{{ post.title }}</a>
+      <br />
+      <span class="card-excerpt">{{ post.excerpt }}</span>
+    </div>
   </li>
+
   {% endfor %}
 </ul>
+
+<script>
+  var a = document.getElementById("tags");
+  console.log(a);
+</script>

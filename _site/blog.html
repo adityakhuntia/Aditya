@@ -60,6 +60,16 @@
   
 
 </head>
+
+<style>
+  @font-face {
+    font-family: 'vouge';
+    src: url(/assets/font/Vogue.otf);
+  }
+
+</style>
+
+
 <body>
 
   <!-- Primary Page Layout
@@ -101,7 +111,7 @@
             <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
             <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
             <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=/resources/resources.html>Resources</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=resources.html>Resources</a></li>
             <li class="navbar-item"><a class="navbar-link" href=/blog>Blog</a></li>
             <li class="navbar-item"><a class="navbar-link" href=/wordle/wordle.html><i class = "fa fa-lock"></i></a></li>
          </ul>
@@ -110,36 +120,87 @@
 
     <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
+  <header class="post-header" >
+    <h1 class="post-title" ></h1>
   </header>
 
-  <div class="post-content">
-    <h1>Latest Posts</h1>
+  <div class="post-content" >
+    
+    <style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 45%; /* Adjust width as needed */
+    margin: 10px; /* Adjust margin as needed */
+    display: inline-block;
+    height: 350px;
+    vertical-align: top;
+  }
+
+  .card img {
+    height: 175px;
+    width: 100%;
+    overflow-x: fill;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card content */
+  .card-content {
+    padding: 20px;
+  }
+
+  /* Card title */
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  /* Card excerpt */
+  .card-excerpt {
+    padding: 20px;
+    font-size: 15px;
+    color: #666;
+  }
+</style>
+
+<h1 style="font-family: vouge">Latest Posts</h1>
 
 <ul>
   
-  <li>
-    <h2><a href="/2018/08/22/kiwifruit.html">Kiwifruit</a></h2>
-    <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
-edible berry of several species of woody vines in the genus Actinidia.</p>
 
+  <li class="card">
+    <img src="https://images.unsplash.com/photo-1678962855744-bf84750152c6?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <div class="card-content">
+      <a class="card-title" href="/2023/01/15/wordle.html">Crunching Numbers in Wordle!</a>
+      <br />
+      <span class="card-excerpt"><p>Heya !</p>
+</span>
+    </div>
   </li>
+
   
-  <li>
-    <h2><a href="/2018/08/21/apples.html">Apples</a></h2>
-    <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
 
+  <li class="card">
+    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <div class="card-content">
+      <a class="card-title" href="/2018/08/21/apples-copy.html">Community Detection in Financial Firms using Graph Theory</a>
+      <br />
+      <span class="card-excerpt"><p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+</span>
+    </div>
   </li>
-  
-  <li>
-    <h2><a href="/2018/08/20/bananas.md.html">Bananas.md</a></h2>
-    <p>A banana is an edible fruit – botanically a berry – produced by several
-kinds of large herbaceous flowering plants in the genus Musa.</p>
 
-  </li>
   
 </ul>
+
+<script>
+  var a = document.getElementById("tags");
+  console.log(a);
+</script>
 
 
 

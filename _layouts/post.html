@@ -2,7 +2,20 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<style>
+  h2 {
+    /*font-family: "vouge";*/
+    font-size: 30px;
+    letter-spacing: 0.25px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+</style>
+<h1 style="font-family: vouge">{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
 {{ content }}
