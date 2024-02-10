@@ -135,51 +135,55 @@
     </form>
 
     <script>
-        document.getElementById("wordleForm").onsubmit = function(event) {
-            event.preventDefault();
+      document.getElementById("wordleForm").onsubmit = function(event) {
+        event.preventDefault();
 
-            const guess1 = document.querySelectorAll(".block")[0].value.toLowerCase();
-            const guess2 = document.querySelectorAll(".block")[1].value.toLowerCase();
-            const guess3 = document.querySelectorAll(".block")[2].value.toLowerCase();
-            const guess4 = document.querySelectorAll(".block")[3].value.toLowerCase();
-            const guess5 = document.querySelectorAll(".block")[4].value.toLowerCase();
+        const guess1 = document.querySelectorAll(".block")[0].value.toLowerCase();
+        const guess2 = document.querySelectorAll(".block")[1].value.toLowerCase();
+        const guess3 = document.querySelectorAll(".block")[2].value.toLowerCase();
+        const guess4 = document.querySelectorAll(".block")[3].value.toLowerCase();
+        const guess5 = document.querySelectorAll(".block")[4].value.toLowerCase();
 
-            const todayWordle = "think"; // Replace this with today's Wordle word
+        const todayWordle = getRandomWord(); // Get a random word from the list
 
-            const userGuess = guess1 + guess2 + guess3 + guess4 + guess5;
+        const userGuess = guess1 + guess2 + guess3 + guess4 + guess5;
 
-            if (userGuess === todayWordle) {
-                alert("Congratulations! You guessed the word!");
-                // Redirect or perform action for correct guess
-            } else {
-                alert("Sorry, try again!");
-                // Perform action for incorrect guess
-            }
+        if (userGuess === todayWordle) {
+          alert("Congratulations! You guessed the word!");
+          // Redirect or perform action for correct guess
+        } else {
+          alert("Sorry, try again!");
+          // Perform action for incorrect guess
+        }
 
-            return false;
-        };
+        return false;
+      };
+
+      // Array of 150 words
+      const wordList = [
+  "Apple", "Brave", "Chair", "Dance", "Eagle", "Fence", "Glass", "House", "Inert", "Jolly",
+  "Kiosk", "Lemon", "Maple", "Nurse", "Opera", "Peach", "Quick", "Ruler", "Salad", "Train",
+  "Uncle", "Viper", "Whisk", "Xerox", "Yield", "Zebra", "Alarm", "Beach", "Crisp", "Diver",
+  "Elite", "Flute", "Grape", "Hobby", "Ivory", "Jelly", "Koala", "Lunch", "Mirth", "Niece",
+  "Onion", "Peace", "Queen", "Radio", "Snack", "Table", "Unity", "Video", "Wharf", "Youth",
+  "Amber", "Bison", "Cloud", "Dairy", "Earth", "Flora", "Gummy", "House", "Insect", "Joust",
+  "Knack", "Latch", "Manor", "Nymph", "Opera", "Pupil", "Quiet", "Round", "Siren", "Tacky",
+  "Urban", "Valve", "Wheat", "Yacht", "Zesty", "Amber", "Brave", "Chalk", "Drama", "Eagle",
+  "Fleet", "Grape", "Hiker", "Ivory", "Joust", "Knoll", "Lemon", "Maple", "Nudge", "Ocean",
+  "Peach", "Quill", "Ruler", "Swirl", "Tally", "Umbra", "Verse", "Whisk", "Xerox", "Yield",
+  "Zebra", "Aloud", "Blaze", "Crane", "Dance", "Eagle", "Fairy", "Glass", "Hotel", "Input",
+  "Jumbo", "Kiosk", "Laser", "Mocha", "Nanny", "Opera", "Peach", "Quake", "Rodeo", "Salsa",
+  "Timer", "Unity", "Venom", "Water", "Yacht", "Zealot", "Alpha", "Bella", "Crash", "Delta",
+  "Extra", "Fancy", "Gazer", "Hotel", "Ingot", "Juicy", "Karma", "Latch", "Mango", "Novel",
+  "Opera", "Pacer", "Quack", "Rival", "Swift", "Tally", "Usher", "Vapor", "Wagon", "Yacht"
+];
 
 
-
-        const data = null;
-
-const xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener('readystatechange', function () {
-	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
-	}
-});
-
-xhr.open('GET', 'https://wordle-answers-solutions.p.rapidapi.com/today');
-xhr.setRequestHeader('X-RapidAPI-Key', 'fbcf308561msh6c6e8191e5b4538p1a307djsn796d1bd6734d');
-xhr.setRequestHeader('X-RapidAPI-Host', 'wordle-answers-solutions.p.rapidapi.com');
-
-xhr.send(data);
-
-
-
+      // Function to get a random word from the list
+      function getRandomWord() {
+        const randomIndex = Math.floor(Math.random() * wordList.length);
+        return wordList[randomIndex];
+      }
     </script>
 
 
