@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- MY CHANGES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="wordle.css">
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -22,47 +19,57 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=../libs/external/skeleton/normalize.css>
-  <link rel="stylesheet" href=../libs/external/skeleton/skeleton.css>
-  <link rel="stylesheet" href=../libs/custom/my_css.css>
+  <link rel="stylesheet" href=/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=/libs/custom/my_css.css>
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src=../libs/external/jquery-3.1.1.min.js></script>
+  <script src=/libs/external/jquery-3.1.1.min.js></script>
 
   <!-- Font-Awesome
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=../libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+  <link rel="stylesheet" href=/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
 
   <!-- Academic-Icons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=../libs/external/academicons-1.8.6/css/academicons.min.css>
+  <link rel="stylesheet" href=/libs/external/academicons-1.8.6/css/academicons.min.css>
 
- 
+
   <!-- Skeleton tabs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=../libs/external/skeleton_tabs/skeleton-tabs.css>
-  <script src=../libs/external/skeleton_tabs/skeleton-tabs.js></script>
+  <link rel="stylesheet" href=/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/libs/external/skeleton_tabs/skeleton-tabs.js></script>
 
   <!-- Timeline
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href=../libs/external/timeline.css>
+  <link rel="stylesheet" href=/libs/external/timeline.css>
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href=../libs/external/github-prettify-theme.css>-->
-  <script src=../libs/custom/my_js.js></script>
+  <!--<link rel="stylesheet" href=/libs/external/github-prettify-theme.css>-->
+  <script src=/libs/custom/my_js.js></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href=../libs/icon.png>
-  <link rel="shortcut icon" type="image/png" href=../libs/icon.png>
+  <link rel="icon" type="image/png" href=/libs/icon.png>
+  <link rel="shortcut icon" type="image/png" href=/libs/icon.png>
 
   
 
   
 
 </head>
+
+<style>
+  @font-face {
+    font-family: 'vouge';
+    src: url(/assets/font/Vogue.otf);
+  }
+
+</style>
+
+
 <body>
 
   <!-- Primary Page Layout
@@ -72,7 +79,7 @@
     <section class="header">
       <div class="row">
         <div class="three columns">
-          <a href="/"><img title="Photo by: Eliza Grinell" class="u-max-full-width" src='../assets/profile-pics/ADITYA.jpg'></a>
+          <a href="/"><img title="Photo by: Eliza Grinell" class="u-max-full-width" src='/assets/profile-pics/ADITYA2.jpeg'></a>
         </div>
         <div class="nine columns main-description">
             <h1>Aditya Khuntia</h1>
@@ -98,20 +105,31 @@
     <div class="navbar-spacer"></div>
     <nav class="navbar">
       <div class="container">
-        <ul class="navbar-list">
-            <li class="navbar-item"><a class="navbar-link" href=../index.html#about>About</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=../index.html#bio>Bio</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=../index.html#publications>Publications</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=../index.html#projects>Projects</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=../index.html#resume>Vita</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=../resources/resources.html>Resources</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=../blogs>Blog</a></li>
-            <li class="navbar-item"><a class="navbar-link" href=../wordle/wordle.html><i class = "fa fa-lock"></i></a></li>
-          </ul>
-          <!-- <li class="navbar-item"><a class="navbar-link" href=../index.html#misc>Misc</a></li> -->
-          <!-- <li class="navbar-item"><a class="navbar-link" href=../index.html#meta>Meta</a></li> -->
+         <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#about>About</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#bio>Bio</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#publications>Publications</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#projects>Projects</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/index.html#resume>Vita</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/resources.html>Resources</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/blog>Blog</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=/wordle/wordle.html><i class = "fa fa-lock"></i></a></li>
+         </ul>
       </div>
-    </nav>
+   </nav>
+
+    <article class="post">
+
+  <header class="post-header" >
+    <h1 class="post-title" ></h1>
+  </header>
+
+  <div class="post-content" >
+    
+    <head>
+  <link href="wordle.css" rel = "stylesheet">
+</head>
+
 
     <article class="post">
 
@@ -124,7 +142,7 @@
 
 
     <form id="wordleForm">
-        <div class="wordle-row">
+        <div class="wordle-row" style="background-color: red;">
             <input type="text" class="block" maxlength="1" required>
             <input type="text" class="block" maxlength="1" required>
             <input type="text" class="block" maxlength="1" required>
@@ -135,52 +153,68 @@
     </form>
 
     <script>
-        document.getElementById("wordleForm").onsubmit = function(event) {
-            event.preventDefault();
+      document.getElementById("wordleForm").onsubmit = function(event) {
+        event.preventDefault();
 
-            const guess1 = document.querySelectorAll(".block")[0].value.toLowerCase();
-            const guess2 = document.querySelectorAll(".block")[1].value.toLowerCase();
-            const guess3 = document.querySelectorAll(".block")[2].value.toLowerCase();
-            const guess4 = document.querySelectorAll(".block")[3].value.toLowerCase();
-            const guess5 = document.querySelectorAll(".block")[4].value.toLowerCase();
+        const guess1 = document.querySelectorAll(".block")[0].value.toLowerCase();
+        const guess2 = document.querySelectorAll(".block")[1].value.toLowerCase();
+        const guess3 = document.querySelectorAll(".block")[2].value.toLowerCase();
+        const guess4 = document.querySelectorAll(".block")[3].value.toLowerCase();
+        const guess5 = document.querySelectorAll(".block")[4].value.toLowerCase();
 
-            const todayWordle = "think"; // Replace this with today's Wordle word
+        const todayWordle = getRandomWord(); // Get a random word from the list
 
-            const userGuess = guess1 + guess2 + guess3 + guess4 + guess5;
+        const userGuess = guess1 + guess2 + guess3 + guess4 + guess5;
 
-            if (userGuess === todayWordle) {
-                alert("Congratulations! You guessed the word!");
-                // Redirect or perform action for correct guess
-            } else {
-                alert("Sorry, try again!");
-                // Perform action for incorrect guess
-            }
+        if (userGuess === todayWordle) {
+          alert("Congratulations! You guessed the word!");
+          // Redirect or perform action for correct guess
+        } else {
+          alert("Sorry, try again!");
+          // Perform action for incorrect guess
+        }
 
-            return false;
-        };
+        return false;
+      };
+
+      // Array of 150 words
+      const wordList = [
+  "Apple", "Brave", "Chair", "Dance", "Eagle", "Fence", "Glass", "House", "Inert", "Jolly",
+  "Kiosk", "Lemon", "Maple", "Nurse", "Opera", "Peach", "Quick", "Ruler", "Salad", "Train",
+  "Uncle", "Viper", "Whisk", "Xerox", "Yield", "Zebra", "Alarm", "Beach", "Crisp", "Diver",
+  "Elite", "Flute", "Grape", "Hobby", "Ivory", "Jelly", "Koala", "Lunch", "Mirth", "Niece",
+  "Onion", "Peace", "Queen", "Radio", "Snack", "Table", "Unity", "Video", "Wharf", "Youth",
+  "Amber", "Bison", "Cloud", "Dairy", "Earth", "Flora", "Gummy", "House", "Insect", "Joust",
+  "Knack", "Latch", "Manor", "Nymph", "Opera", "Pupil", "Quiet", "Round", "Siren", "Tacky",
+  "Urban", "Valve", "Wheat", "Yacht", "Zesty", "Amber", "Brave", "Chalk", "Drama", "Eagle",
+  "Fleet", "Grape", "Hiker", "Ivory", "Joust", "Knoll", "Lemon", "Maple", "Nudge", "Ocean",
+  "Peach", "Quill", "Ruler", "Swirl", "Tally", "Umbra", "Verse", "Whisk", "Xerox", "Yield",
+  "Zebra", "Aloud", "Blaze", "Crane", "Dance", "Eagle", "Fairy", "Glass", "Hotel", "Input",
+  "Jumbo", "Kiosk", "Laser", "Mocha", "Nanny", "Opera", "Peach", "Quake", "Rodeo", "Salsa",
+  "Timer", "Unity", "Venom", "Water", "Yacht", "Zealot", "Alpha", "Bella", "Crash", "Delta",
+  "Extra", "Fancy", "Gazer", "Hotel", "Ingot", "Juicy", "Karma", "Latch", "Mango", "Novel",
+  "Opera", "Pacer", "Quack", "Rival", "Swift", "Tally", "Usher", "Vapor", "Wagon", "Yacht"
+];
 
 
-
-        const data = null;
-
-const xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener('readystatechange', function () {
-	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
-	}
-});
-
-xhr.open('GET', 'https://wordle-answers-solutions.p.rapidapi.com/today');
-xhr.setRequestHeader('X-RapidAPI-Key', 'fbcf308561msh6c6e8191e5b4538p1a307djsn796d1bd6734d');
-xhr.setRequestHeader('X-RapidAPI-Host', 'wordle-answers-solutions.p.rapidapi.com');
-
-xhr.send(data);
-
-
-
+      // Function to get a random word from the list
+      function getRandomWord() {
+        const randomIndex = Math.floor(Math.random() * wordList.length);
+        return wordList[randomIndex];
+      }
     </script>
+
+
+
+  </div>
+
+</article>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+
 
 
 
