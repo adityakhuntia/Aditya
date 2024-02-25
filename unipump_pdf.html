@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+---
+
+<style>
+  .pdfobject-container {
+    height: 30rem;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<body>
+  <div id="example1" style="height: 100vh; width: 60vw"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+<script>
+  PDFObject.embed("assets/CopyRight-UniPump.pdf", "#example1");
+</script>
