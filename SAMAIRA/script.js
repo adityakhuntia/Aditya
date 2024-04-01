@@ -1,11 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Function to generate a random permutation of numbers
+
+  alert(
+    "Heya Love! Here's to Us ! ... \nBTW Tech Update : Just press on an image to zoom it :) ... \n Study Hard & Ace it \n\n With Loads of Love \n Americano Khuntia"
+  );
+
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+  }
+
+  // Function to add click event to images to open in modal
+  function addImageClickEvent() {
+    var images = document.querySelectorAll(
+      ".carousel-primary img, .carousel-secondary img"
+    );
+    images.forEach(function (image) {
+      image.addEventListener("click", function () {
+        var src = this.getAttribute("src");
+        document.getElementById("modal-image").setAttribute("src", src);
+        modal.style.display = "block";
+      });
+    });
   }
 
   // Function to load unique random images
@@ -36,43 +55,27 @@ document.addEventListener("DOMContentLoaded", function () {
         secondaryContainer.appendChild(img); // Append image to secondary container
       }
     });
+
+    // Call function to add click event to images after they have been loaded
+    addImageClickEvent();
   }
 
   // Call the function to load unique random images when the page is loaded
   loadUniqueRandomImages();
-});
 
-// Get the modal element
-var modal = document.getElementById("modal");
+  // Modal functionality
+  var modal = document.getElementById("modal");
+  var closeBtn = document.getElementById("close");
 
-// Get the close button
-var closeBtn = document.getElementById("close");
-
-// Get all the images with class "gallery-image"
-var images = document.querySelectorAll(".carousel-primary img");
-
-// Loop through each image and attach a click event listener
-images.forEach(function (image) {
-  image.addEventListener("click", function () {
-    // Get the src attribute of the clicked image
-    var src = this.getAttribute("src");
-
-    // Set the src attribute of the modal image
-    document.getElementById("modal-image").setAttribute("src", src);
-
-    // Show the modal
-    modal.style.display = "block";
-  });
-});
-
-// When the user clicks on the close button, close the modal
-closeBtn.addEventListener("click", function () {
-  modal.style.display = "none";
-});
-
-// When the user clicks anywhere outside of the modal, close it
-window.addEventListener("click", function (event) {
-  if (event.target == modal) {
+  // When the user clicks on the close button, close the modal
+  closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
-  }
+  });
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
 });
