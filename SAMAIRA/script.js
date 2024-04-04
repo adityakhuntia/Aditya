@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to generate a random permutation of numbers
 
   alert(
-    "Heya Love! Here's to Us ! ... \nBTW Tech Update : Just press on an image to zoom it :) ... \n Study Hard & Ace it \n\n With Loads of Love \n Americano Khuntia"
+    "Samairaaa! How's it going ( tu toh bata nahin payegi big L) \n \n All The Best ! \n \n Heya Love! Here's to Us ! ... \nBTW Tech Update : Just press on an image to zoom it :) ... \n Study Hard & Ace it \n\n With Loads of Love \n Americano Khuntia"
   );
 
   function shuffle(array) {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to load unique random images
   function loadUniqueRandomImages() {
-    const totalImages = 30; // Total number of images available
+    const totalImages = 36; // Total number of images available
     const imagesPerPage = 5; // Number of images per row
     const containerIds = ["row-1", "row-2", "row-3", "row-4", "row-5", "row-6"]; // IDs of containers
     const imageIndices = Array.from({ length: totalImages }, (_, i) => i + 1); // Generate image indices array
