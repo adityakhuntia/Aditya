@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to generate a random permutation of numbers
 
   alert(
-    "i miss you \n \n Heya Love! Here's to Us ! ... \nBTW Tech Update : Just press on an image to zoom it :) ... \n Study Hard & Ace it \n\n With Loads of Love \n Americano Khuntia"
+    " It's nonsense, says reason. \n It is what is, says love. \n \n It's a disaster, says logic. \n It's nothing but pain, says fear. \n  It's hopeless, says common sense. \n It is what it is, says love.\n \n It's ridiculous, says pride. \n  It's foolhardy, says prudence. \n It's impossible, says experience. \n \n It is what it is, says love. \n \n Read this and remembered you \n \nHeya Love! Here's to Us ! ... \nBTW Tech Update : Just press on an image to zoom it :) ... \n Study Hard & Ace it \n\n With Loads of Love \n Americano Khuntia"
   );
 
   function shuffle(array) {
