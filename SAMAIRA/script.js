@@ -1,9 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Function to generate a random permutation of numbers
 
-  alert(
-    " It's nonsense, says reason. \n It is what is, says love. \n \n It's a disaster, says logic. \n It's nothing but pain, says fear. \n  It's hopeless, says common sense. \n It is what it is, says love.\n \n It's ridiculous, says pride. \n  It's foolhardy, says prudence. \n It's impossible, says experience. \n \n It is what it is, says love. \n \n Read this and remembered you \n \nHeya Love! Here's to Us ! ... \nBTW Tech Update : Just press on an image to zoom it :) ... \n Study Hard & Ace it \n\n With Loads of Love \n Americano Khuntia"
-  );
+  alert(`Hey Love,
+
+  Somehow you've become a constant thought nowadays. What you must be doing, How must be? I don't know. I hope all is fine, I hope you're uncomfortable, I hope you're pushing yourself as much as you can, fuck more than you can cause perhaps that is what is required.
+  
+  In all of what is going on, and what you must do i.e., study, know that there is one guy cheering behind all the screens, wanting what you want for yourself, hoping for your happiness, contentness, and success.
+  
+  Days and months have gone by with me saying sab khatam hone de, and soon enough sab khatam ho jayega... which is when I want all of you for myself and the other way around.
+  
+  It's not a pep talk but anyway, padhle Samaira padhle.
+  
+  I love you darling and just waiting, waiting for you to become free, satisfied and happy, waiting for you to become mine.
+  
+  With loads and loads of love,
+  
+  Americano Khuntia`);
 
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -29,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to load unique random images
   function loadUniqueRandomImages() {
-    const totalImages = 46; // Total number of images available
-    const imagesPerPage = 7; // Number of images per row
+    const totalImages = 50; // Total number of images available
+    const imagesPerPage = 10; // Number of images per row
     const containerIds = ["row-1", "row-2", "row-3", "row-4", "row-5", "row-6"]; // IDs of containers
     const imageIndices = Array.from({ length: totalImages }, (_, i) => i + 1); // Generate image indices array
 
