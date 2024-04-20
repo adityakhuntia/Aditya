@@ -1,21 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to generate a random permutation of numbers
+  alert(`Hi Darling !
 
-  alert(`Hey Love,
-
-  Somehow you've become a constant thought nowadays. What you must be doing, How must be? I don't know. I hope all is fine, I hope you're uncomfortable, I hope you're pushing yourself as much as you can, fuck more than you can cause perhaps that is what is required.
+  You’re so close to getting done with your exams. You’ve been working so hard and I’m really proud of you. It’s not like you don’t already know what I would want to say to you, everytime you call we make sure both of us know what’s going on. And what’s going on is that I Love You. Weak words, because they absolutely do not encompass the magnitudes of love and affection I feel for you.
   
-  In all of what is going on, and what you must do i.e., study, know that there is one guy cheering behind all the screens, wanting what you want for yourself, hoping for your happiness, contentness, and success.
+  Keep pushing forward, you're almost at the finish line. When you're done, we'll celebrate all your hard work. While you’re travelling to places while sitting, I want to travel to each one of them, with you !  Just a little bit longer, and this chapter of your journey will be complete. I believe in you more than words can express, and I'll be right here cheering you on every step of the way. You are incredible, and I love you more than ever.
   
-  Days and months have gone by with me saying sab khatam hone de, and soon enough sab khatam ho jayega... which is when I want all of you for myself and the other way around.
+  Study Hard & Ace It !
   
-  It's not a pep talk but anyway, padhle Samaira padhle.
+  Darling I miss you, your presence, your voice and so much more. But I know soon enough, you’ll be all mine. 
   
-  I love you darling and just waiting, waiting for you to become free, satisfied and happy, waiting for you to become mine.
-  
-  With loads and loads of love,
-  
-  Americano Khuntia`);
+  With Loads of Patience &
+  With Loads & Loads of Love 
+  Adi`);
 
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -25,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return array;
   }
 
-  // Function to add click event to images to open in modal
   function addImageClickEvent() {
     var images = document.querySelectorAll(
       ".carousel-primary img, .carousel-secondary img"
@@ -39,53 +34,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Function to load unique random images
   function loadUniqueRandomImages() {
-    const totalImages = 50; // Total number of images available
-    const imagesPerPage = 10; // Number of images per row
-    const containerIds = ["row-1", "row-2", "row-3", "row-4", "row-5", "row-6"]; // IDs of containers
-    const imageIndices = Array.from({ length: totalImages }, (_, i) => i + 1); // Generate image indices array
+    const totalImages = 67; // Total number of images available (58 - 30 + 1)
+    const imagesPerPage = 11; // Number of images per row
+    const containerIds = ["row-1", "row-2", "row-3", "row-4", "row-5", "row-6"]; // Adjust as needed based on total rows
+    const imageIndices = Array.from({ length: totalImages }, (_, i) => i); // Generate image indices array starting from 30
 
-    // Shuffle the image indices array
     const shuffledIndices = shuffle(imageIndices);
 
-    // Loop through each container
     containerIds.forEach((containerId) => {
       const primaryContainer = document.getElementById(containerId);
       const secondaryContainer = document.getElementById(containerId + "-s");
-      primaryContainer.innerHTML = ""; // Clear previous images
-      secondaryContainer.innerHTML = ""; // Clear previous images
+      primaryContainer.innerHTML = "";
+      secondaryContainer.innerHTML = "";
 
-      // Loop to add unique random images
       for (let i = 0; i < imagesPerPage; i++) {
-        const randomIndex = shuffledIndices.pop(); // Get the last index from the shuffled array
-        if (randomIndex === undefined) return; // Break if all images are used
+        const randomIndex = shuffledIndices.pop();
+        if (randomIndex === undefined) return;
         const img = document.createElement("img");
         img.setAttribute("loading", "lazy");
-        img.src = `WEB/${randomIndex}.jpg`; // Set image source
-        img.alt = `cat${randomIndex}`; // Set alt attribute
-        primaryContainer.appendChild(img.cloneNode()); // Append cloned image to primary container
-        secondaryContainer.appendChild(img); // Append image to secondary container
+        img.src = `WEB/${randomIndex}.jpg`;
+        img.alt = `cat${randomIndex}`;
+        primaryContainer.appendChild(img.cloneNode());
+        secondaryContainer.appendChild(img);
       }
     });
 
-    // Call function to add click event to images after they have been loaded
     addImageClickEvent();
   }
 
-  // Call the function to load unique random images when the page is loaded
   loadUniqueRandomImages();
 
-  // Modal functionality
   var modal = document.getElementById("modal");
   var closeBtn = document.getElementById("close");
 
-  // When the user clicks on the close button, close the modal
   closeBtn.addEventListener("click", function () {
     modal.style.display = "none";
   });
 
-  // When the user clicks anywhere outside of the modal, close it
   window.addEventListener("click", function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
