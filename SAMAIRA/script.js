@@ -1,17 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  alert(`Hi Darling !
-
-  You’re so close to getting done with your exams. You’ve been working so hard and I’m really proud of you. It’s not like you don’t already know what I would want to say to you, everytime you call we make sure both of us know what’s going on. And what’s going on is that I Love You. Weak words, because they absolutely do not encompass the magnitudes of love and affection I feel for you.
-  
-  Keep pushing forward, you're almost at the finish line. When you're done, we'll celebrate all your hard work. While you’re travelling to places while sitting, I want to travel to each one of them, with you !  Just a little bit longer, and this chapter of your journey will be complete. I believe in you more than words can express, and I'll be right here cheering you on every step of the way. You are incredible, and I love you more than ever.
-  
-  Study Hard & Ace It !
-  
-  Darling I miss you, your presence, your voice and so much more. But I know soon enough, you’ll be all mine. 
-  
-  With Loads of Patience &
-  With Loads & Loads of Love 
-  Adi`);
+  alert(`Aeee 17 saal ki choti choti bachi ! Padhle Samaira Padhle 
+Love You 
+Adi:) `);
 
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
