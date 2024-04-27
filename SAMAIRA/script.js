@@ -1,7 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  alert(`Aeee 17 saal ki choti choti bachi ! Padhle Samaira Padhle 
-Love You 
-Adi:) `);
+  alert(`Samairaaaa !!!Perhaps this message brings a smile to your face. I just wanted to tell you how much I miss you. It's been a while since we last met and I can't wait to hold you in my arms again. Hold you like you're mine. I wanna hold your hand, see your face, your smile, see you, hear your voice and your laughs and give you a big tight tight hug 
+  
+  Somehow the nervousness and excitement they're peaking for me as well. But I know you, I know that you've worked hard ( really really hard ) and you're going to give your best shot. I am super proud of you. 
+  
+  Remember my love, you are intelligent, capable and strong . You're  Samaira so omniscient, always right and smart is a given. I mean that's just who you are. I can imagine the mix of emotions you must be feeling right now. But let me remind you, you are not alone , they're loads of people wishing for your best success, cheering for you and I am one amongst them. You are ready for this !
+  
+  For the love god darling please please pleaseee don't forget the photos !!!  Try not to take much stress and get done with it like a rockstar. ( Maybe this playlist will help https://music.apple.com/in/playlist/2am/pl.u-JPAZERNuD6xbPxm … disclaimer: they're a whole different genre )
+  All the best ! Study hard & Ace It ! 
+  
+  Waiting for you 
+  With all the love I can give 
+  Adi  `);
 
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
