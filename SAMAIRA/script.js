@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  alert(`Samairaaaa !!!Perhaps this message brings a smile to your face. I just wanted to tell you how much I miss you. It's been a while since we last met and I can't wait to hold you in my arms again. Hold you like you're mine. I wanna hold your hand, see your face, your smile, see you, hear your voice and your laughs and give you a big tight tight hug 
+  alert(`Today is one of those days, when I miss you a lot, perhaps it's the music. I dont know why or how, but loads of memories popped up right now ... right from when I was in school. All the fresca,trying to search for you during dispersal, heyy the first time I wanted to ask you out and then Riddhi happened, all that planning with divyaansh, diwali parties, bombay trip where you so kindly chose my food, told me your side of the story for the first time. Hey talking with those rabbits, talking in the car, late at night ( cause bed mai toh papa soyenge). Techfest, grabbing your permission with so much struggle.
+  Man I do miss you ! 
+  But naa ... Padhle Samaira Padhle !
+  - -3rd May 3.01 - -
+  
+  Samairaaaa !!!Perhaps this message brings a smile to your face. I just wanted to tell you how much I miss you. It's been a while since we last met and I can't wait to hold you in my arms again. Hold you like you're mine. I wanna hold your hand, see your face, your smile, see you, hear your voice and your laughs and give you a big tight tight hug 
   
   Somehow the nervousness and excitement they're peaking for me as well. But I know you, I know that you've worked hard ( really really hard ) and you're going to give your best shot. I am super proud of you. 
   
